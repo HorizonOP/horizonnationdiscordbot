@@ -65,9 +65,7 @@ client.on('message', message => {
 		else if(command ==='status'){
 			client.commands.get('status').execute(message, args, client)
 		}
-		else if(command==='userinfo'){
-			client.commands.get('whois').execute(message, args, cmd, client, Discord)
-		}
+		
 
 });
 
