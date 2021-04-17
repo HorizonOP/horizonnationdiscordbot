@@ -34,10 +34,6 @@ client.on('message', message => {
 		
 	
 	} 
-	if (message.content === 'what is my avatar') {
-		// Send the user's avatar URL
-		message.reply(message.author.displayAvatarURL());
-	}
 	
 	else if (command === 'youtube'){
 		client.commands.get('youtube').execute(message, args );
