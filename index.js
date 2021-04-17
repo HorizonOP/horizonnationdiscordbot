@@ -42,7 +42,7 @@ client.on('message', message => {
 		
 	}
 	else if (command ==='avatar'){
-		client.commands.get('avatar').execute(message, args)
+		client.commands.get('avatar').execute(message, args, Discord)
 	}
 	else if (command === "clear") {
 		client.commands.get("clear").execute(message, args)

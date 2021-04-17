@@ -3,7 +3,7 @@ module.exports = {
     aliasses: ['av'],
     cooldown: 10,
     description: 'Return a user(s) avatar picture!',
-    execute(message, args) {
+    execute(message, args, Discord) {
 
         if (!message.mentions.users.size) {
             return message.channel.send(`**Your Avatar: ** ${message.author.displayAvatarURL({ dynamic: true })}`);
