@@ -11,7 +11,8 @@ module.exports = {
         {name: 'Youtube Command', value: '!youtube'},
         {name: 'Music Commands', value: '!play , !leave'},
         {name: 'Ping Command', value: '!ping'},
-        {name: 'Invite the bot to ur server', value: '!invite'}
+        {name: 'Invite the bot to ur server', value: '!invite'},
+        {name: 'Avatar Command', value: '!avatar or !avatar Mention a user'}
 
 
 
