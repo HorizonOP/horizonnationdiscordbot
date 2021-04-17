@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require 	('fs');
+const { CLIENT_RENEG_WINDOW } = require('tls');
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles){
@@ -34,13 +35,14 @@ client.on('message', message => {
 		
 	
 	} 
-	 if (message.content === 'av') {
-    // Send the user's avatar URL
-    message.reply(message.author.displayAvatarURL());
-	 }
+	 
+	
 	else if (command === 'youtube'){
 		client.commands.get('youtube').execute(message, args );
 		
+	}
+	else if (command ==='avatar'){
+		client.commands.get('avatar').execute(message, args, cmd, client, Discord)
 	}
 	else if (command === "clear") {
 		client.commands.get("clear").execute(message, args)
