@@ -30,8 +30,16 @@ client.on('message', message => {
 	const command = args.shift().toLowerCase();
 	if(command === 'ping'){
 		client.commands.get('ping').execute(message, args);
+
+		
 	
-	} else if (command === 'youtube'){
+	} 
+	if (message.content === 'what is my avatar') {
+		// Send the user's avatar URL
+		message.reply(message.author.displayAvatarURL());
+	}
+	
+	else if (command === 'youtube'){
 		client.commands.get('youtube').execute(message, args );
 		
 	}
