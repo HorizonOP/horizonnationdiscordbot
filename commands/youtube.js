@@ -1,3 +1,4 @@
+const Discord = require('discord')
 module.exports = 
 {
     name: 'youtube',
