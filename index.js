@@ -1,5 +1,19 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const mongoose = require('mongoose');
+const mongo = require('./mongo')
+const connectToMongoDB = async () => {
+  await mongo().then((mongoose) => {
+    try 
+  {
+    console.log('Connected to MongoDB!')
+  }
+  finally
+  {
+    mongoose.connection.close()
+  }
+  })
+}
 const fs = require 	('fs');
 const { CLIENT_RENEG_WINDOW } = require('tls');
 client.commands = new Discord.Collection();
@@ -72,3 +86,4 @@ client.on('message', message => {
 
 
 client.login(process.env.token);
+connectToMongoDB()
