@@ -79,6 +79,9 @@ client.on('message', message => {
 		else if(command ==='status'){
 			client.commands.get('status').execute(message, args, client)
 		}
+		else if(command ==='r'){
+			client.commands.get('roll').execute(message, args, client)
+		}
 		
 
 });
