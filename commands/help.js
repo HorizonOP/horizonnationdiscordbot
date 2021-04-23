@@ -14,7 +14,7 @@ module.exports = {
         {name: 'Invite the bot to ur server', value: '!invite'},
         {name: 'Avatar Command', value: '!avatar or !avatar Mention a user'},
         {name: 'Moderator Commands', value: '!warn , !clear '},
-        {name: 'Roll . Try it YOur Self', value: '!r'},
+        {name: 'Roll . Try it Your self', value: '!r'},
         {name: 'Developer of the bot', value: '!dev'}
         
         
