@@ -68,6 +68,10 @@ client.on('message', message => {
 		else if (command ==='r'){
 			client.commands.get('roll').execute(message, args)
 		}
+		else if (command ==='dev'){
+			client.commands.get('dev').execute(message, args)
+		}
+		
 
 		
 
