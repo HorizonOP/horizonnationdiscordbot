@@ -72,7 +72,7 @@ client.on('message', message => {
 			client.commands.get('dev').execute(message, args)
 		}
 		else if (command ==='ding'){
-			client.commands.get('ding').execute(message. args)
+			client.commands.get('ding').execute(message, args)
 		}
 		else if (command ==='kill'){
 			client.commands.get('kill').execute(message, args)
