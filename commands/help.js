@@ -15,7 +15,8 @@ module.exports = {
         {name: 'Avatar Command', value: '!avatar or !avatar Mention a user'},
         {name: 'Moderator Commands', value: '!warn , !clear '},
         {name: 'Roll . Try it Your self', value: '!r'},
-        {name: 'Developer of the bot', value: '!dev'}
+        {name: 'Developer of the bot', value: '!dev'},
+        {name: 'Fun Commands', value: '!ding , !kill'}
         
         
         
