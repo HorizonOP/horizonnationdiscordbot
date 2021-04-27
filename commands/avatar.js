@@ -1,19 +1,21 @@
-const Discord = require('discord.js')
-
 module.exports = {
-  commands: ['Avatar', 'avatar', 'ProfilePic', 'profilepic'],
-  description: 'Displays the avatar of a user',
-  expectedArgs: '<mention the user to get his avatar>',
-  minArgs: 0,
-  maxArgs: 1,
-  callback: (message, arguments) => {
-    const target = message.mentions.users.first() || message.author
-    const image = target.avatarURL()
+    name: 'avatar',
+    aliasses: ['av'],
+    cooldown: 10,
+    description: 'Return a user(s) avatar picture!',
+    execute(message, args, Discord) {
 
-    const embed = new Discord.MessageEmbed()
-      .setTitle('title')
-      .setImage(image)
-      .setFooter('footer')
-    message.channel.send(embed)
-  },
+        if (!message.mentions.users.size) {
+            return message.channel.send(`**Your Avatar: ** ${message.author.displayAvatarURL({ dynamic: true })}`);
+        }
+
+        const avatar_list = message.mentions.users.map(user => {
+            return `**${user.username}'s Avatar: ** ${user.displayAvatarURL({ dynamic: true })}`;
+        });
+
+        message.channel.send(avatar_list);
+
+
+    
+    }
 }
