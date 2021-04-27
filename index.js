@@ -77,6 +77,10 @@ client.on('message', message => {
 		else if (command ==='kill'){
 			client.commands.get('kill').execute(message, args)
 		}
+		else if (command ==='punch'){
+			client.commands.get('punch').execute(message, args)
+		}
+		
 		
 
 		
