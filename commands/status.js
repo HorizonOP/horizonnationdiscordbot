@@ -2,7 +2,7 @@ module.exports = {
     name: 'status',
     description: "Ping pong command!",
     execute(message, args, client){
-        if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('Noob you ain\'t admin.')
+        if(!message.author.id === '640052930682159112') return message.channel.send('Noob you aint owner of this bot')
 
         
   let type = args[0]
