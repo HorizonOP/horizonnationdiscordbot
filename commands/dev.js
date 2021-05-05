@@ -4,9 +4,9 @@ module.exports = {
     execute(message, args, Discord) {
         const devEmbed = new Discord.MessageEmbed()
         .setColor('#0055FF')
-        .setTitle('Invite')
+        .setTitle('Dev')
         .setURL('https://www.youtube.com/channel/UCJtbyCHmt_TAa9RxgC2aA8w')
-        .setDescription('Invite the bot to your server')
+        .setDescription('Developer and Support Server')
         .addFields(
             {name: 'Developer and Owner of Horizon Nation', value: 'Horizon.#7038'},
             {name: 'Join Horizon Nation Support/Dev Server', value: 'https://discord.gg/4n3mPA2u8v'}
@@ -17,7 +17,7 @@ module.exports = {
 
 
         )
-        .setFooter('Dev; Horizon.#7038')
+        .setFooter('POG CHAMP v1.0 Very Very Soon')
         message.channel.send(devEmbed);
     }
 }
