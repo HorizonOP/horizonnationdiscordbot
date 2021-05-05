@@ -69,7 +69,7 @@ client.on('message', message => {
 			client.commands.get('roll').execute(message, args)
 		}
 		else if (command ==='dev'){
-			client.commands.get('dev').execute(message, args)
+			client.commands.get('dev').execute(message, args, Discord);
 		}
 		else if (command ==='ding'){
 			client.commands.get('ding').execute(message, args)
