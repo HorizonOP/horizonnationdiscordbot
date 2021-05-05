@@ -60,7 +60,7 @@ client.on('message', message => {
 			client.commands.get('help').execute(message, args, Discord);
 		}
 		else if (command ==='invite'){
-			client.commands.get('invite').execute(message, args)
+			client.commands.get('invite').execute(message, args, Discord);
 		}
 		else if(command ==='status'){
 			client.commands.get('status').execute(message, args, client)
