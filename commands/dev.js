@@ -1,5 +1,5 @@
 module.exports = {
-    name: 'invite',
+    name: 'dev',
     description: "Help command.",
     execute(message, args, Discord) {
         const devEmbed = new Discord.MessageEmbed()
