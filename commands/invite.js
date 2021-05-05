@@ -6,7 +6,7 @@ module.exports = {
         .setColor('#0055FF')
         .setTitle('Invite')
         .setURL('https://www.youtube.com/channel/UCJtbyCHmt_TAa9RxgC2aA8w')
-        .setDescription('Invite Command')
+        .setDescription('Invite the bot to your server')
         .addFields(
             {name: 'Invite Command', value: 'https://discord.com/oauth2/authorize?client_id=827475563949326376&scope=bot&permissions=0'}
        
