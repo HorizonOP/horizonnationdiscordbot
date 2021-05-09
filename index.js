@@ -80,6 +80,9 @@ client.on('message', message => {
 		else if (command ==='punch'){
 			client.commands.get('punch').execute(message, args)
 		}
+		else if (command ==='vote'){
+			client.commands.get('vote').execute(message, args, Discord);
+		}
 		
 		
 
