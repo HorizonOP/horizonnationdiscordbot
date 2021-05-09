@@ -25,6 +25,7 @@ module.exports = {
 
 
         )
+        .setImage('https://media.giphy.com/media/aiywpnnvQBmRFge7Vu/giphy.gif')
         .setFooter('This command is still in construction as the bot is not completely ready yet')
         message.channel.send(newEmbed);
     }
