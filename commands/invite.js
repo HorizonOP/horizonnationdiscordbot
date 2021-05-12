@@ -8,7 +8,7 @@ module.exports = {
         .setURL('https://www.youtube.com/channel/UCJtbyCHmt_TAa9RxgC2aA8w')
         .setDescription('Invite the bot to your server')
         .addFields(
-            {name: 'Invite Command', value: 'https://discord.com/oauth2/authorize?client_id=827475563949326376&scope=bot&permissions=134590789'}
+            {name: '', value: 'https://discord.com/oauth2/authorize?client_id=827475563949326376&scope=bot&permissions=134590789'}
        
         
 
