@@ -16,7 +16,7 @@ module.exports = {
 
 
         )
-        .setFooter('Dev; Horizon.#7038')
+        .setFooter('Dev: Horizon#7038')
         message.channel.send(oldEmbed);
     }
 }
