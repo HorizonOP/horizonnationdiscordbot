@@ -16,7 +16,7 @@ module.exports = {
             target.send(`You've been warned with the reason: **${reson}**`)
             message.channel.send(`<@${target.id}> has been warned with the reason: **${reson}**`)
         } else {
-            message.channel.send('Only mods can execute this command!')
+            message.channel.send('Nooob you aint mod')
         }
     }
 }
