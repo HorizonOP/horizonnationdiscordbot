@@ -12,9 +12,16 @@ for(const file of commandFiles){
 const prefix = 'h!';
 
 
-client.once('ready', () => {
-	console.log('Horizon Nation is Online!');
-})
+client.on("ready", () =>{
+    console.log(`Logged in as ${client.user.tag}!`);
+    client.user.setPresence({
+        status: "dnd",  //You can show online, idle....
+        game: {
+            name: "Using h!help | h!invite",  //The message shown
+            type: "STREAMING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
+ });
 
 
 client.on('guildMemberAdd', (memeber) => {
@@ -62,9 +69,8 @@ client.on('message', message => {
 		else if (command ==='invite'){
 			client.commands.get('invite').execute(message, args, Discord);
 		}
-		else if(command ==='status'){
-			client.commands.get('status').execute(message, args, client)
-		}
+		
+		
 		else if (command ==='r'){
 			client.commands.get('roll').execute(message, args)
 		}
