@@ -9,7 +9,7 @@ for(const file of commandFiles){
 
 	client.commands.set(command.name, command);
 }
-const prefix = '!';
+const prefix = 'h!';
 
 
 client.once('ready', () => {
