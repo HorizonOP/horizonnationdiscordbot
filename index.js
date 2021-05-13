@@ -15,10 +15,10 @@ const prefix = 'h!';
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
-        status: "dnd",  //You can show online, idle....
+        status: "idle	",  //You can show online, idle....
         game: {
-            name: "Using h!help | h!invite",  //The message shown
-            type: "STREAMING" //PLAYING: WATCHING: LISTENING: STREAMING:
+            name: "V1.0 | h!help | h!invite",  //The message shown
+            type: "LISTENING" //PLAYING: WATCHING: LISTENING: STREAMING:
         }
     });
  });
