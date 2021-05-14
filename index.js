@@ -89,6 +89,9 @@ client.on('message', message => {
 		else if (command ==='vote'){
 			client.commands.get('vote').execute(message, args, Discord);
 		}
+		else if (command ==='userinfo'){
+			client.commands.get('userinfo').execute(bot, message, args)
+		}
 		
 		
 
