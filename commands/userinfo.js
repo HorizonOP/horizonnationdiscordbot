@@ -4,7 +4,7 @@ module.exports = {
   name: "userinfo",
   description: "Information about a user",
   category: "fun",
-  run: async (Bot, message, args) => {
+  run: async (message, args, Discord) => {
 	let user;
 if (msg.mentions.users.first()) {
     user = msg.mentions.users.first();
