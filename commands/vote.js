@@ -3,7 +3,7 @@ module.exports = {
     description: "Help command.",
     execute(message, args, Discord) {
         const votEmbed = new Discord.MessageEmbed()
-        .setColor('#0055FF')
+        .setColor('RANDOM')
         .setTitle('Vote')
         .setURL('https://www.youtube.com/channel/UCJtbyCHmt_TAa9RxgC2aA8w')
         .setDescription('Vote for Horizon Nation')

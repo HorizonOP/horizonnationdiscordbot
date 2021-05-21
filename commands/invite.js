@@ -3,7 +3,7 @@ module.exports = {
     description: "Help command.",
     execute(message, args, Discord) {
         const oldEmbed = new Discord.MessageEmbed()
-        .setColor('#0055FF')
+        .setColor('RANDOM')
         .setTitle('Invite')
         .setURL('https://www.youtube.com/channel/UCJtbyCHmt_TAa9RxgC2aA8w')
         .setDescription('Invite the bot to your server')
