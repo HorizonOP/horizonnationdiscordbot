@@ -89,7 +89,7 @@ client.on('message', message => {
 		else if (command ==='vote'){
 			client.commands.get('vote').execute(message, args, Discord);
 		}
-		else if (command ==='userinfo'){
+		else if (command ==='ui'){
 			client.commands.get('userinfo').execute(message, args, Discord);
 		}
 		
