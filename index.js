@@ -91,7 +91,12 @@ client.on('message', message => {
 		}
 		else if (command ==='ui'){
 			client.commands.get('userinfo').execute(message, args, Discord);
+		
 		}
+		else if (command ==='status'){
+			client.commands.get('status').execute(message, args, client);
+		}
+
 		
 		
 
