@@ -94,7 +94,7 @@ client.on('message', message => {
 		
 		}
 		else if (command ==='status'){
-			client.commands.get('status').execute(message, args, client)
+			client.commands.get('status').execute(client, message, args)
 		}
 
 		
