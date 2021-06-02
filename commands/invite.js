@@ -16,7 +16,7 @@ module.exports = {
 
 
         )
-        .setFooter('Dev: Horizon#7038')
+        .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
         message.channel.send(oldEmbed);
     }
 }

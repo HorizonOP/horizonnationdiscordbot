@@ -17,7 +17,7 @@ module.exports = {
 
 
         )
-        .setFooter('POG CHAMP v1.0 Very Very Soon')
+        .setFooter(`Replying to ${message.author.username}#${message.author.discriminator}`)
         message.channel.send(devEmbed);
     }
 }
