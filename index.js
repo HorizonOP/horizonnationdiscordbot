@@ -17,7 +17,7 @@ const prefix = 'h!';
 client.on("ready", () =>{
     console.log(`Logged in as ${client.user.tag}!`);
     client.user.setPresence({
-        status: "idle",  //You can show online, idle....
+        status: "online",  //You can show online, idle....
         game: {
             name: "V1.0 | h!help | h!invite",  //The message shown
             type: "LISTENING" //PLAYING: WATCHING: LISTENING: STREAMING:
