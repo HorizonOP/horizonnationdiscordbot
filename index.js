@@ -4,6 +4,8 @@ const fs = require 	('fs');
 const { CLIENT_RENEG_WINDOW } = require('tls');
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
+const disbut = require('discord-buttons');
+disbut(client);
 for(const file of commandFiles){
 	const command = require(`./commands/${file}`);
 
@@ -24,12 +26,7 @@ client.on("ready", () =>{
  });
 
 
-client.on('guildMemberAdd', (memeber) => {
-	let welcomeRole	= Discord.GuildMember.guild.roles.cache.find(role => role.name === 'Members');
 
-	guildMember.roles.add(welcomeRole);
-	guildMember.guild.channels.cache.get('737254223460433930').send(`Welcome <@${guildMember.user.id}> to our server . Have a great Time here boi`)
-})
 
 client.on('message', message => {
 	if(!message.content.startsWith(prefix) || message.author.bot) return
