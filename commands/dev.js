@@ -9,7 +9,7 @@ module.exports = {
         .setDescription('Developer and Support Server')
         .addFields(
             {name: 'Developer and Owner of Horizon Nation', value: 'HorizonX#0001'},
-            {name: 'Join Horizon Nation Support/Dev Server', value: 'https://discord.gg/4n3mPA2u8v'}
+            {name: 'Join Horizon Nation Support/Dev Server', value: 'https://discord.gg/WKmNT8WKUp'}
        
         
 
